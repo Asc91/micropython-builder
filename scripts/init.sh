@@ -24,7 +24,7 @@ git clone https://github.com/v923z/micropython-ulab ulab || git -C ulab pull
 git clone https://github.com/micropython/micropython micropython || git -C micropython pull
 : ${MICROPYTHON_TAG:=$(git tag --sort -v:refname | grep -v preview | head -n 1)}
 # git -C micropython checkout ${MICROPYTHON_TAG}
-git -C micropython checkout v1.24.0
+git -C micropython checkout v1.27.0
 
 cd micropython
 git submodule update --init
